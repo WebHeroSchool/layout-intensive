@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-  font-family: Roboto, sans-serif;
+  /*font-family: Roboto, sans-serif;*/
   margin: auto;
   width: 80%;
 }
@@ -14,9 +14,40 @@ body {
   padding: 40px 0;
 }
 
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+}
+
+.logo__circle_dark-blue {
+  background: #0056EC;
+}
+
+.logo__circle_blue {
+  background: #C8DBFB;
+  left: 8px;
+  top: 70%;
+}
+
+.logo {
+  position: relative;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serifregular, arial, helvetica, sans-serif;
+}
+
 .menu {
   padding: 0 13px;
 }
-.menu__item:last-child{
+.menu__item:last-child {
   padding-right: 0;
+}
+
+.main-content__title {
+  font-family: pt_serifregular, arial, helvetica, sans-serif;;
 }

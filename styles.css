@@ -5,12 +5,13 @@ body {
 .wrapper {
   margin: auto;
   width: 80%;
+  max-height: 100em;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  margin: 40px 0 103px 0;
 }
 
 .logo__circle {
@@ -37,11 +38,11 @@ body {
 .logo {
   position: relative;
   padding-left: 44px;
-  font: bold 24px/31px pt_serifregular, arial, helvetica, sans-serif;
+  font: 24px/31px pt_serifbold, arial, helvetica, sans-serif;
 }
 
 .menu {
-  padding: 0 13px;
+  padding-top: 9px; // меню было выше логотипа, подстраивалось под кружочки, а не уровень текста
 }
 
 .menu__item:last-child {
@@ -98,6 +99,57 @@ body {
   opacity: 1;
 }
 
-.main-content__title {
-  font-family: pt_serifregular, arial, helvetica, sans-serif;
+.main {
+  padding: 143px 63% 100% 0;
+  background: top right no-repeat url(img.svg);
+  background-size: 770px;
+}
+
+.main__title {
+  position: relative;
+  margin: 0 0 32px 0;
+  font: 66px/87px pt_serifbold, arial, helvetica, sans-serif;
+}
+
+.main__title::before {
+  position: absolute;
+  display: block;
+  content: '';
+  background: #ECF3FF;
+  width: 497px;
+  height: 69px;
+  z-index: -1;
+  bottom: 36%;
+}
+
+.main__title::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: #ECF3FF;
+  width: 296px;
+  height: 69px;
+  z-index: -1;
+  top: 70%;
+}
+
+.main__subtitle {
+  max-width: 455px;
+  margin: 0 0 40px 0;
+  font: 22px/28px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button {
+  display: inline-block;
+  font: 18px/20px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056EC;
+  padding: 18px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
 }

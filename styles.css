@@ -3,8 +3,7 @@ body {
 }
 
 .wrapper {
-  margin: auto;
-  padding-left: 8px; /* костыль -.- */
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -39,6 +38,10 @@ body {
   position: relative;
   padding-left: 44px;
   font: 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
+}
+
+.menu-burger {
+  display: none;
 }
 
 .menu {
@@ -190,4 +193,70 @@ body {
   height: 8px;
   background: #ECF3FF;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+
+  .menu {display: none;}
+
+  .logo__text {display: none;}
+
+  .pagination {display: none;}
+
+  #burger {display: none;}
+
+  .menu-box {display: none;}
+
+  .wrapper {
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin: 28px auto;
+  }
+
+  .logo__circle {/*позиционировать кружочку относительно друг друга*/}
+
+  .menu-burger {
+    display: block;
+    margin: 2px 0;
+  }
+
+  .menu-burger__item {
+    margin: 3px 0;
+    padding-bottom: 2px;
+    width: 25px;
+    height: 2px;
+    background: #0056EC;
+  }
+
+  .main {
+    text-align: center;
+    padding: 0;
+    background-size: 280px 239px;
+    background-position: top center;
+  }
+
+  .main__title {
+    position: relative;
+    padding: 265px 0 0 0;
+    font: 30px 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__title::before {display: none;}
+
+  .main__title::after {display: none;}
+
+  .main__subtitle {
+    width: 255px;
+    margin: 0 0 25px 38px;
+    font: 16px/18px 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 14px 'robotomedium', arial, helvetica, sans-serif;
+    padding: 14px 16px;
+    margin: 0 0 43px 0;
+  }
 }

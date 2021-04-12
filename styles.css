@@ -48,10 +48,6 @@ body {
   padding-top: 7px;
 }
 
-.menu__item:last-child {
-  margin-right: 0;
-}
-
 .menu__item {
   position: relative;
   margin-right: 23px;
@@ -59,6 +55,10 @@ body {
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
 }
 
 .menu__item:after {
@@ -145,7 +145,7 @@ body {
 
 .main__button {
   display: inline-block;
-  font: 18px/20px 'Roboto', arial, helvetica, sans-serif;
+  font: 18px/20px 'robotomedium', arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
   padding: 18px 25px;
@@ -338,4 +338,108 @@ body {
     padding: 14px 16px;
     margin: 0 0 43px 0;
   }
+}
+
+@media (min-width:770px) and (max-width: 1024px) {
+
+  .wrapper {
+    width: 91%;
+  }
+
+  .header {
+    margin-bottom: 127px;
+  }
+
+  .menu {
+    padding-top: 8px;
+  }
+
+  .menu__item {
+    font: 14px 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .main {
+    background-size: 514px;
+    padding-top: 0;
+  }
+
+  .main__title {
+    padding-top: 14px;
+    font: 50px 'pt_serifbold', arial, helvetica, sans-serif;
+    width: 443px;
+  }
+
+  .main__title::before {
+    width: 380px;
+    height: 53px;
+  }
+
+  .main__title::after {
+    width: 226px;
+    height: 53px;
+  }
+
+  .main__subtitle {
+    font: 18px/22px 'robotomedium', arial, helvetica, sans-serif;
+    margin-bottom: 42px;
+  }
+
+  .main__button {
+    font: 14px 'robotomedium', arial, helvetica, sans-serif;
+    padding: 14px 16px;
+    margin-bottom: 146px;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1367px) {
+
+  .wrapper {
+    width: 68%;
+  }
+
+  .header {
+    margin-bottom: 127px;
+  }
+
+  .menu {
+    padding-top: 8px;
+  }
+
+  .menu__item {
+    font: 14px 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .main {
+    background-size: 514px;
+    padding-top: 0;
+  }
+
+  .main__title {
+    padding-top: 14px;
+    font: 50px 'pt_serifbold', arial, helvetica, sans-serif;
+    width: 443px;
+  }
+
+  .main__title::before {
+    width: 380px;
+    height: 53px;
+  }
+
+  .main__title::after {
+    width: 226px;
+    height: 53px;
+  }
+
+  .main__subtitle {
+    font: 18px/22px 'robotomedium', arial, helvetica, sans-serif;
+    margin-bottom: 42px;
+  }
+
+  .main__button {
+    font: 14px 'robotomedium', arial, helvetica, sans-serif;
+    padding: 14px 16px;
+    margin-bottom: 146px;
+  }
+
 }

@@ -11,7 +11,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0 174px 0;
+  margin: 40px 0 170px 0;
 }
 
 @keyframes text-shadow {
@@ -119,7 +119,8 @@ body {
 
 .main {
   position: relative;
-  padding: 70px 60% 0 0;
+  padding: 73px 60% 0 0;
+  margin-right: 8px;
   background: top right no-repeat url(img.svg);
   background-size: 770px;
 }
@@ -153,7 +154,7 @@ body {
 }
 
 .main__subtitle {
-  margin: 0 180px 40px 2px;
+  margin: 0 180px 43px 2px;
   font: 22px/26px 'robotoregular', arial, helvetica, sans-serif;
 }
 
@@ -163,7 +164,7 @@ body {
   color: #fff;
   background: #0056EC;
   padding: 18px 27px;
-  margin: 0 0 269px 3px;
+  margin: 0 0 270px 1px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s, font-size 1s, padding 1s;
@@ -180,7 +181,7 @@ body {
   top: 0;
   left: 50%;
   right: 50%;
-  display: block;
+  display: flex;
   justify-content: center;
   background: #ECF3FF;
   width: 8px;
@@ -280,6 +281,11 @@ body {
     font-size: 16px;
     padding: 15px 23px;
   }
+
+  .pagination {
+    left: 48%;
+    right: 52%;
+  }
 }
 
 @media (min-width: 1061px) and (max-width: 1340px) {
@@ -347,7 +353,6 @@ body {
   }
 }
 
-/*1024*/
 @media (min-width: 970px) and (max-width: 1060px) {
   .wrapper {
     width: 94%;
@@ -360,7 +365,6 @@ body {
 
   .menu {
     padding-top: 8px;
-
   }
 
   .menu__item {
@@ -396,7 +400,7 @@ body {
 
   .main__subtitle {
     font: 18px/22px 'robotomedium', arial, helvetica, sans-serif;
-    margin: 0 0 43px 2px;
+    margin: 0 0 41px 2px;
   }
 
 
@@ -410,6 +414,11 @@ body {
   .main__button:hover {
     font-size: 16px;
     padding: 15px 23px;
+  }
+
+  .pagination {
+    left: 48%;
+    right: 52%;
   }
 }
 
@@ -900,7 +909,7 @@ body {
 }
 
 /*iPhone X / iPhone 6/7/8 / Moto 4G / Galaxy S5*/
-@media (min-width: 375px) and (max-width: 399px) {
+@media (min-width: 374px) and (max-width: 399px) {
 
   .logo__text {display: none;}
   .menu {display: none;}
@@ -1022,7 +1031,7 @@ body {
 }
 
 /*iPhone 5/SE / Galaxy Fold*/
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .logo__text {display: none;}
   .menu {display: none;}
   .pagination {display: none;}
